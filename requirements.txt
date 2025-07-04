@@ -1,0 +1,8 @@
+numpy
+matplotlib
+nibabel
+read-roi
+pyometiff
+scikit-image
+scipy
+jupyterlab
