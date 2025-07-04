@@ -10,3 +10,25 @@ Finally, the average histogram of all sessions from each experiment (Fig. 1 f), 
 
 It should be noted that temporal smoothing of the signal was performed at two levels: (i) an explicit temporal reduction through local averaging over blocks of 10 consecutive frames, which reduced rapid non-neuronal fluctuations; and (ii) an adaptive baseline correction using the arPLS algorithm [Baek2015], which fits a smooth function to the slow components of the signal by asymmetrically weighting transient points. The regularization parameter (λ = 10) was chosen to preserve transients of interest while effectively eliminating long-term drifts caused by background noise or photobleaching.
 
+![Preview](figure_pipeline.png)
+
+## Installation
+
+### Clone the repository:
+```bash
+$ git clone https://github.com/arnaudletroter/CALIM.git
+```
+### (Optional but recommended) Create a virtual environment:
+conda create --name CALIM 
+conda activate CALIM
+
+### Install dependencies:
+```bash
+$ pip install -r requirements.txt
+```
+
+
+## REFERENCES
+
+[Baek2015] Sung-June Baek, Aaron Park, Young-Jin Ahn, and Jaebum Choo. Baseline correction using asymmetri-
+cally reweighted penalized least squares smoothing. Analyst, 140(1):250–257, 2015.
