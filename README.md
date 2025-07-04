@@ -19,8 +19,10 @@ It should be noted that temporal smoothing of the signal was performed at two le
 $ git clone https://github.com/arnaudletroter/CALIM.git
 ```
 ### (Optional but recommended) Create a virtual environment:
-conda create --name CALIM 
+```bash
+conda create --name CALIM
 conda activate CALIM
+```
 
 ### Install dependencies:
 ```bash
