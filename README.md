@@ -27,6 +27,65 @@ conda activate CALIM
 $ pip install -r requirements.txt
 ```
 
+### Exemple Input Dataset organization
+```bash
+└── 04-04-23
+    ├── 230404_5
+    │   ├── 230404_5_MMStack_Pos0_metadata.txt
+    │   ├── 230404_5_MMStack_Pos0.ome.tif
+    │   ├── ROIs
+    │   │   └── ROIs.zip
+    └── 230404_9
+        ├── 230404_9_MMStack_Pos0_metadata.txt
+        ├── 230404_9_MMStack_Pos0.ome.tif
+        ├── ROIs
+        │   └── ROIs.zip
+```
+
+### Usage
+```bash
+$ jupyter-notebook calim_analysis.ipynb
+```
+
+### Exemple Output Dataset organization
+```bash
+├── 04-04-23
+│   ├── 230404_5
+│   │   ├── 230404_5_mask_arpls_clean_1.png
+│   │   ├── 230404_5_mask_arpls_clean_2.png
+│   │   ├── 230404_5_mask_arpls_clean_3.png
+│   │   ├── 230404_5_mask_arpls_NORM_1.png
+│   │   ├── 230404_5_mask_arpls_NORM_2.png
+│   │   ├── 230404_5_mask_arpls_NORM_3.png
+│   │   ├── 230404_5_mask1.png
+│   │   ├── 230404_5_mask2.png
+│   │   ├── 230404_5_mask3.png
+│   │   ├── 230404_5_MMStack_Pos0_metadata.txt
+│   │   ├── 230404_5_MMStack_Pos0.ome.tif
+│   │   ├── ROIs
+│   │   │   └── ROIs.zip
+│   └── 230404_9
+│       ├── 230404_9_mask_arpls_clean_1.png
+│       ├── 230404_9_mask_arpls_clean_2.png
+│       ├── 230404_9_mask_arpls_clean_3.png
+│       ├── 230404_9_mask_arpls_clean_4.png
+│       ├── 230404_9_mask_arpls_NORM_1.png
+│       ├── 230404_9_mask_arpls_NORM_2.png
+│       ├── 230404_9_mask_arpls_NORM_3.png
+│       ├── 230404_9_mask_arpls_NORM_4.png
+│       ├── 230404_9_mask1.png
+│       ├── 230404_9_mask2.png
+│       ├── 230404_9_mask3.png
+│       ├── 230404_9_mask4.png
+│       ├── 230404_9_MMStack_Pos0_metadata.txt
+│       ├── 230404_9_MMStack_Pos0.ome.tif
+│       ├── ROIs
+│       │   └── ROIs.zip
+├── heatmap.pdf
+├── hist_cum.pdf
+├── results_norm.csv
+└── results_raw.csv
+```
 
 ## REFERENCES
 
